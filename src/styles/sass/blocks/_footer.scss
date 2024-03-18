@@ -1,0 +1,23 @@
+.footer {
+  border-top: 5px solid $ui-black;
+  background-color: $bg-purple;
+  padding-top: 172px;
+  padding-bottom: 60px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  &::after {
+    content: url(../../images/decorate-footer.svg);
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+  }
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: 1.39fr 1fr;
+  column-gap: 32px;
+}

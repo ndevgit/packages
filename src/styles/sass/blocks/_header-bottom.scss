@@ -1,0 +1,39 @@
+.header__bottom {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  column-gap: 32px;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  column-gap: 153px;
+}
+
+.nav__link {
+  color: $text-white;
+
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.contact-link {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $text-white;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

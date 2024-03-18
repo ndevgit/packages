@@ -1,0 +1,128 @@
+.upgrading__line {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 260px;
+    background-color: $ui-green;
+    left: -260px;
+  }
+}
+
+.upgrading__line-left {
+  background: $gradient-green;
+  padding: 25px 61px 22px 0px;
+
+  column-gap: 32px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 149px 1fr 0fr;
+}
+
+.upgrading__line-description {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $text-white;
+}
+
+.upgrading__line-arrow {
+}
+
+.upgrading__line-arrow-img {
+  max-width: 100%;
+}
+
+.upgrading__line-right {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.upgrading__line-button {
+  border-color: $ui-yellow;
+  background-color: $ui-white;
+  padding: 32px 14px 32px 20px;
+}
+
+.upgrading__line-price {
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $text-yellow;
+}
+
+.upgrading__line--lite {
+  &::before {
+    background-color: $ui-yellow;
+  }
+  & .upgrading__line-left {
+    background: $gradient-yellow;
+  }
+
+  & .upgrading__line-price {
+    color: $text-orange;
+  }
+
+  & .upgrading__line-button {
+    border-color: $ui-orange;
+  }
+
+  & .upgrading__line-button-image {
+    & path {
+      stroke: $ui-orange;
+    }
+  }
+}
+
+.upgrading__line--plus {
+  &::before {
+    background-color: $ui-orange;
+  }
+  & .upgrading__line-left {
+    background: $gradient-orange;
+  }
+
+  & .upgrading__line-price {
+    color: $text-pink;
+  }
+
+  & .upgrading__line-button {
+    border-color: $ui-pink;
+  }
+
+  & .upgrading__line-button-image {
+    & path {
+      stroke: $ui-pink;
+    }
+  }
+}
+
+.upgrading__line--pro {
+  &::before {
+    background-color: $ui-pink;
+  }
+  & .upgrading__line-left {
+    background: $gradient-pink;
+  }
+
+  & .upgrading__line-price {
+    color: $text-purple;
+  }
+
+  & .upgrading__line-button {
+    border-color: $ui-purple;
+  }
+
+  & .upgrading__line-button-image {
+    & path {
+      stroke: $ui-purple;
+    }
+  }
+}

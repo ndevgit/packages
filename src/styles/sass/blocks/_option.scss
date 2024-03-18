@@ -1,0 +1,155 @@
+.option {
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid $ui-black;
+  background-color: $ui-white;
+
+  padding-top: 30px;
+  padding-bottom: 27px;
+  padding-left: 43px;
+  padding-right: 43px;
+
+  max-width: 360px;
+  width: 100%;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 27px;
+    background-color: $ui-white;
+
+    border-top: 2px solid $ui-black;
+    border-left: 2px solid $ui-black;
+    border-right: 2px solid $ui-black;
+
+    border-radius: 12px 12px 0 0;
+
+    top: -27px;
+    right: 28px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    opacity: 0.9;
+
+    &::before {
+      opacity: 0.9;
+    }
+  }
+}
+
+.option__description {
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: $text-black;
+}
+
+.option--startx {
+  background-color: $ui-green;
+
+  border-color: transparent;
+
+  & .option__description {
+    color: $text-white;
+  }
+
+  &::before {
+    background-color: $ui-green;
+    border-color: transparent;
+  }
+}
+
+// .option--startx:nth-child(1) {
+//   border-radius: 15px 15px 0 0;
+
+//   &::before {
+//     left: 28px;
+//     right: unset;
+//   }
+// }
+
+// .option--startx:nth-child(2) {
+//   border-radius: 0 0 15px 15px;
+
+//   &::before {
+//     left: unset;
+//     right: -2px;
+//   }
+// }
+
+.option--lite {
+  background-color: $ui-yellow;
+  border-color: transparent;
+
+  & .option__description {
+    color: $text-white;
+  }
+
+  &::before {
+    background-color: $ui-yellow;
+    border-color: transparent;
+  }
+}
+
+.option--plus {
+  background-color: $ui-orange;
+  padding-bottom: 15px;
+  border-color: transparent;
+
+  & .option__description {
+    color: $text-white;
+  }
+
+  &::before {
+    background-color: $ui-orange;
+    border-color: transparent;
+  }
+}
+
+// .option--plus:nth-of-type(4) {
+//   border-radius: 15px 15px 0 0;
+
+//   &::before {
+//     left: 28px;
+//     right: unset;
+//   }
+// }
+
+// .option--plus:nth-of-type(5) {
+//   border-radius: 0;
+
+//   &::before {
+//     left: unset;
+//     right: -2px;
+//   }
+// }
+
+// .option--plus:nth-of-type(6) {
+//   border-radius: 0 0 15px 15px;
+
+//   &::before {
+//     left: unset;
+//     right: -2px;
+//   }
+// }
+
+.option--pro {
+  background-color: $ui-pink;
+
+  border-color: transparent;
+
+  & .option__description {
+    color: $text-white;
+  }
+
+  &::before {
+    background-color: $ui-pink;
+    border-color: transparent;
+  }
+}

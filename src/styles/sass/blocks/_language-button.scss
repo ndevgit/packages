@@ -1,0 +1,26 @@
+.language-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  border: 2px solid $ui-white;
+  border-top: none;
+  border-radius: 0 0 25px 25px;
+  padding: 25px 24px;
+
+  font-family: $font-poppins;
+  color: $text-white;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  position: relative;
+
+  &:hover {
+    background-color: $ui-white;
+    color: $text-black;
+  }
+}

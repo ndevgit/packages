@@ -1,0 +1,125 @@
+.form {
+  //   display: flex;
+  //   flex-direction: column;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  margin-bottom: 17px;
+}
+
+.form__input {
+  border-radius: 20px;
+  font-family: $font-poppins;
+
+  font-size: 16px;
+  color: $text-purple;
+
+  padding: 22px 25px;
+
+  border: none;
+  outline: none;
+
+  transition: 0.3s;
+
+  &::placeholder {
+    font-family: $font-poppins;
+
+    font-size: 16px;
+    color: $text-purple;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 0px 3px $ui-black;
+  }
+}
+
+.form__checkbox-block {
+  margin-bottom: 38px;
+}
+
+.form__checkbox-real {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  vertical-align: sub;
+  position: relative;
+
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+  background-color: $ui-white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form__checkbox-custom::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-image: url(../../images/icons/custom-checkbox-form.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: 0.3s;
+}
+
+.form__checkbox-real:checked + .form__checkbox-custom::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form__checkbox-description {
+  font-size: 16px;
+  color: $text-white;
+}
+
+.form__privacy-link {
+  font-size: 16px;
+  color: $text-white;
+  text-decoration: underline;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.form__button {
+  border-radius: 20px;
+  background-color: $ui-white;
+  border: 2px solid $ui-black;
+
+  font-family: $font-poppins;
+  font-weight: 700;
+  font-size: 16px;
+  color: $text-black;
+
+  padding: 22px 80px;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,66 @@
+.footer__title-left {
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $text-white;
+
+  margin-bottom: 100px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  margin-bottom: 220px;
+
+  max-width: 266px;
+}
+
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+
+  color: $text-white;
+  font-size: 16px;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.agreement-link {
+  font-size: 16px;
+  text-decoration: underline;
+
+  color: $text-white;
+
+  transition: 0.3s;
+
+  display: inline-block;
+  margin-bottom: 8px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.payment-info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  max-width: 572px;
+
+  background-color: $ui-white;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.payment-info__title {
+  color: $text-black;
+  font-size: 16px;
+}
