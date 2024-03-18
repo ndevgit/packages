@@ -1,16 +1,26 @@
 .upgrading {
   padding-top: 190px;
   padding-bottom: 344px;
-  position: relative;
-  overflow: hidden;
 
-  &::after {
-    content: url(../../images/decorate-packages.svg);
-    position: absolute;
-    left: 181px;
-    bottom: 191px;
-    z-index: -1;
-  }
+  background-image: url(../../images/decorate-packages.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 187px left 167px;
+}
+
+.upgrading__content {
+  position: relative;
+
+  // &::after {
+  //   content: url(../../../images/decorate-packages.svg);
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 187px;
+  //   z-index: -1;
+  // }
+
+  // background-image: url(../../../images/decorate-packages.svg);
+  // background-repeat: no-repeat;
+  // background-position: bottom left;
 }
 
 .upgrading__title-wrapper {

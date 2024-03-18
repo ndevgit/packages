@@ -3,6 +3,8 @@
   cursor: pointer;
   transition: 0.3s;
 
+  border: 2px solid transparent;
+
   padding: 17px 0;
 
   &::after {
@@ -20,8 +22,13 @@
   }
 
   &:hover {
+    border-color: #00000070;
     & .package__spoiler-chevron {
       opacity: 0.5;
+    }
+
+    & .package__spoiler-decorate-button {
+      border-color: #00000070;
     }
   }
 }
@@ -32,6 +39,10 @@
   height: 100px;
   border-radius: 0px 0px 60px 60px;
   text-align: center;
+
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
 
   right: calc(50% - 200px);
   box-sizing: border-box;

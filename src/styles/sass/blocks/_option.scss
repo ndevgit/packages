@@ -36,9 +36,11 @@
 
   &:hover {
     opacity: 0.9;
+    border-color: #00000070;
 
     &::before {
       opacity: 0.9;
+      border-color: #00000070;
     }
   }
 }

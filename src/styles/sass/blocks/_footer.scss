@@ -6,14 +6,9 @@
 
   position: relative;
 
-  overflow: hidden;
-
-  &::after {
-    content: url(../../images/decorate-footer.svg);
-    position: absolute;
-    right: 0;
-    bottom: -7px;
-  }
+  background-image: url(../../images/decorate-footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right 128px;
 }
 
 .footer__columns {
