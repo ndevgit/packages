@@ -216,9 +216,22 @@
   }
 
   .footer__columns {
-    grid-template-columns: 0fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     row-gap: 132px;
+  }
+
+  .footer__column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .payment-info {
