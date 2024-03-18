@@ -234,6 +234,12 @@
     align-items: center;
   }
 
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .payment-info {
     flex-direction: column;
     row-gap: 11px;
